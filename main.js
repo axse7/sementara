@@ -43,14 +43,14 @@ function createMemberCard(member) {
 }
 
 function displayMembers(members) {
-  memberCardsContainer.innerHTML = "";
+  let memberCardsHTML = "";
   members.forEach((member) => {
-    const memberCard = createMemberCard(member);
-    memberCardsContainer.innerHTML += memberCard;
+    memberCardsHTML += createMemberCard(member);
   });
+  memberCardsContainer.innerHTML = memberCardsHTML;
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   backBtn.style.display = "none";
 });
 
