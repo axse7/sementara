@@ -72,10 +72,10 @@
           <div class="space-y-1 px-2 pb-3 pt-2">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-500 hover:bg-indigo-50 hover:text-indigo-600" -->
             <a href="index.html" class="text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-            <a href="#about" class="text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 block rounded-md px-3 py-2 text-base font-medium" onclick="tutupNavbar()">About Us</a>
-            <a href="#members" class="text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 block rounded-md px-3 py-2 text-base font-medium" onclick="tutupNavbar()">Members</a>
-            <a href="#history" class="text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 block rounded-md px-3 py-2 text-base font-medium" onclick="tutupNavbar()">History</a>
-            <a href="#menfes" class="text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 block rounded-md px-3 py-2 text-base font-medium" onclick="tutupNavbar()">Menfess</a>
+            <a href="#about" class="text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 block rounded-md px-3 py-2 text-base font-medium closeNavbar">About Us</a>
+            <a href="#members" class="text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 block rounded-md px-3 py-2 text-base font-medium closeNavbar">Members</a>
+            <a href="#history" class="text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 block rounded-md px-3 py-2 text-base font-medium closeNavbar">History</a>
+            <a href="#menfes" class="text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 block rounded-md px-3 py-2 text-base font-medium closeNavbar">Menfess</a>
             <!-- dropdown menu -->
             <div class="relative" x-data="{ showDropdown: false }">
               <a href="#" class="text-gray-500 hover:bg-indigo-50 hover:text-indigo-600 block rounded-md px-3 py-2 text-base font-medium" id="menu-button" @click="showDropdown = !showDropdown"> Menu <i class="bi bi-chevron-down"></i></a>
@@ -164,9 +164,7 @@
                 <h3 class="text-lg font-medium text-gray-900">Baruna Kalih Setya</h3>
               </a>
 
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Perkenalkan Nama Saya Beruna, Saya adalah Ketua Kelas XI RPL 1
-              </p>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">Perkenalkan Nama Saya Beruna, Saya adalah Ketua Kelas XI RPL 1</p>
             </div>
           </div>
           <div class="group">
@@ -178,7 +176,8 @@
               </a>
 
               <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Hai aku pio, utamakan resing😍🫰🏼, cita cita due bis 100. <br> ig @zeviohanifan tq.
+                Hai aku pio, utamakan resing😍🫰🏼, cita cita due bis 100. <br />
+                ig @zeviohanifan tq.
               </p>
             </div>
           </div>
@@ -190,9 +189,7 @@
                 <h3 class="text-lg font-medium text-gray-900">Niko Rangga Ezza Putera Indrianto</h3>
               </a>
 
-              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                hello everyone, perkenalkan namaku Niko Rangga Ezza Putera Indrianto, orang-orang biasanya memanggilku Rangga, Saya lahir di Sidoarjo pada tanggal 25 Mei 2007.
-              </p>
+              <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">hello everyone, perkenalkan namaku Niko Rangga Ezza Putera Indrianto, orang-orang biasanya memanggilku Rangga, Saya lahir di Sidoarjo pada tanggal 25 Mei 2007.</p>
             </div>
           </div>
           <div class="group">
@@ -204,7 +201,8 @@
               </a>
 
               <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                hi, u can call me chacha. everyone call me like that n i thinks that’s the pretties calling. born in Tuban, 2 April 2007. anyway i like meet with new people or public speaking && matcha so fucking die ! HAHAHA. yg bilang matcha rumput pergi jauh-jauh pls. k, just that about me, if u want to know me so deeply (uh?! wkwk).
+                hi, u can call me chacha. everyone call me like that n i thinks that’s the pretties calling. born in Tuban, 2 April 2007. anyway i like meet with new people or public speaking && matcha so fucking die ! HAHAHA. yg bilang
+                matcha rumput pergi jauh-jauh pls. k, just that about me, if u want to know me so deeply (uh?! wkwk).
               </p>
             </div>
           </div>
@@ -327,7 +325,7 @@
     </div>
     <!-- form end -->
 
-    <!-- accordian -->
+    <!-- FAQ'S -->
     <div class="mx-auto max-w-screen-md px-4 py-16 sm:px-6 lg:px-8">
       <div class="space-y-4">
         <details class="group [&_summary::-webkit-details-marker]:hidden" open>
@@ -339,17 +337,16 @@
         </details>
         <details class="group [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
-            <h2 class="font-medium">Bingung kenapa cuma ada <span class="text-indigo-600">Login</span> tapi ngga ada <span class="text-indigo-600">Sign Up</span>?</h2>
+            <h2 class="font-medium">Kenapa ada page <span class="text-indigo-600">Absen</span>?</h2>
             <i class="bi bi-chevron-down size-5 shrink-0 transition duration-300 group-open:-rotate-180"></i>
           </summary>
           <p class="mt-4 px-4 leading-relaxed text-gray-700">
-            Jadi sebenarnya website ini juga memiliki fitur yang dimana hanya bisa diakses oleh murid axioo saja. Jadi buat kalian yang bukan murid XI rpl 1 atau axioo ngga bisa login deh. Minta maaf ya, mimin capek kalo harus bikin website
-            khusus kita :).
+            Buat kalian yang bingung ada page Absen, itu sebenarnya dibuat untuk Siswa dan Siswi Kelas XI RPL 1. Nah buat kalian yang bukan Murid XI RPL 1 ngga perlu diisi <i class="bi bi-hand-thumbs-up"></i>.
           </p>
         </details>
       </div>
     </div>
-    <!-- accordian end -->
+    <!-- FAQ'S end -->
 
     <!-- footer -->
     <footer class="bg-white">

@@ -5,10 +5,14 @@ btnNavbar.addEventListener("click", () => {
   mobileNavbar.classList.toggle("hidden");
 });
 
-function tutupNavbar() {
-  setTimeout(() => {
-    mobileNavbar.classList.toggle("hidden");
-  }, 1000);
+const closeNavbar = document.querySelectorAll(".closeNavbar");
+
+for (let i = 0; i < closeNavbar.length; i++) {
+  closeNavbar[i].addEventListener("click", () => {
+    setTimeout(() => {
+      mobileNavbar.classList.toggle("hidden");
+    }, 1000);
+  });
 }
 
 const memberCardsContainer = document.getElementById("memberCards");
@@ -16,7 +20,7 @@ const searchInput = document.getElementById("searchInput");
 const searchForm = document.getElementById("searchForm");
 const backBtn = document.getElementById("backButton");
 
-fetch("/json/members.json")
+fetch("../json/members.json")
   .then((response) => response.json())
   .then((data) => {
     members = data;
