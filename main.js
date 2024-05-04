@@ -5,6 +5,12 @@ btnNavbar.addEventListener("click", () => {
   mobileNavbar.classList.toggle("hidden");
 });
 
+function tutupNavbar() {
+  setTimeout(() => {
+    mobileNavbar.classList.toggle("hidden");
+  }, 1000);
+}
+
 const memberCardsContainer = document.getElementById("memberCards");
 const searchInput = document.getElementById("searchInput");
 const searchForm = document.getElementById("searchForm");
@@ -33,7 +39,7 @@ function createMemberCard(member) {
 }
 
 function displayMembers(members) {
-  memberCardsContainer.innerHTML = ""; 
+  memberCardsContainer.innerHTML = "";
   members.forEach((member) => {
     const memberCard = createMemberCard(member);
     memberCardsContainer.innerHTML += memberCard;
@@ -57,7 +63,7 @@ function searchMembers(event) {
 searchForm.addEventListener("submit", searchMembers);
 
 backBtn.addEventListener("click", function (event) {
-  event.preventDefault(); 
+  event.preventDefault();
   displayMembers(members);
   this.style.display = "none";
 });
