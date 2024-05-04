@@ -24,9 +24,9 @@ function createMemberCard(member) {
     <img alt="${member.name}" src="${member.image}" class="h-56 w-full rounded-xl object-cover shadow-xl transition md:grayscale-[50%] hover:grayscale-[0]" />
     <div class="p-4">
       <a href="#">
-        <h3 class="text-lg font-medium text-gray-900">${member.name}</h3>
+        <h3 class="text-lg font-semibold text-gray-900">${member.name}</h3>
       </a>
-      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">${member.description}</p>
+      <p class="mt-2 text-sm/relaxed text-gray-500">${member.description}</p>
     </div>
   </div>
   `;
