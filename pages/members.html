@@ -174,12 +174,7 @@
 
     <!-- back to top scroll button -->
     <div x-data="{ show: false }" x-on:scroll.window="show = window.pageYOffset >= 500" class="fixed bottom-8 right-8">
-      <div
-        x-show="show"
-        x-transition
-        x-on:click="window.scrollTo({top: 0, behavior: 'smooth'})"
-        class="scrollTop z-10 fixed bottom-8 right-8 border-2 border-indigo-600 rounded-full px-4 py-3 text-indigo-600 hover:text-white hover:bg-indigo-600"
-      >
+      <div x-show="show" x-transition x-on:click="window.scrollTo({top: 0, behavior: 'smooth'})" class="scrollTop z-10 fixed bottom-8 right-8 border-2 border-indigo-600 px-4 py-3 text-indigo-600 hover:text-white hover:bg-indigo-600">
         <i class="bi bi-chevron-double-up"></i>
       </div>
     </div>

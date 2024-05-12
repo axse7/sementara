@@ -17,7 +17,14 @@
     color: white;
     display: block;
   }
-
+  .scrollTop {
+    border-radius: 10px;
+    transition: 1s;
+  }
+  .scrollTop:hover {
+    transform: rotate(360deg);
+    border-radius: 50%;
+  }
   .btn-grad:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
