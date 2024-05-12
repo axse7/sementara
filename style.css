@@ -18,11 +18,11 @@
     display: block;
   }
   .scrollTop {
-    border-radius: 10px;
+    border-radius: 50%;
     transition: 1s;
   }
   .scrollTop:hover {
-    transform: rotate(360deg);
+    transform: rotate(720deg);
     border-radius: 50%;
   }
   .btn-grad:hover {
