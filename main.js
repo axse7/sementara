@@ -20,7 +20,7 @@ const searchInput = document.getElementById("searchInput");
 const searchForm = document.getElementById("searchForm");
 const backBtn = document.getElementById("backButton");
 
-fetch("../json/members.json")
+fetch("../data/members.json")
   .then((response) => response.json())
   .then((data) => {
     members = data;
